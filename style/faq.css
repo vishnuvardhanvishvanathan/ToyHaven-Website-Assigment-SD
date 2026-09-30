@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Fondamento:ital@0;1&family=Sora:wght@100..800&display=swap');
+
+:root {
+    /* Colors */
+    --white-color: #E9EcEF;
+    --dark-color: #343a40;
+    --primary-color: #ced4da;
+
+    /* Site max width */
+    --site-max-width: 81.25rem;
+}
+
+* {
+    font-family: 'Sora', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+main {
+    flex: 1 0 auto;
+
+    max-width: var(--site-max-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    width: 100%;
+    align-items: flex-start;
+}
+
+.row > .card {
+    flex: 1 1 22rem;
+    min-width: 0;
+}
+
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    
+    height: auto;
+    min-height: fit-content;
+
+    position: relative;
+    display: flex;
+
+    flex-direction: column;
+    gap: 1.25rem;
+    overflow: visible;
+}
+
+.card h1, .card h2 {
+    
+    color: var(--dark-color);
+
+    letter-spacing: 0.5px;
+}
+
+.card h1 { font-size: 2rem; }
+.card h2 { font-size: 1.4rem; }
+
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+    height: auto;
+    position: static;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: var(--white-color);
+    outline: none;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--dark-color);
+    background-color: #ffffff;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+.btn {
+    position: static;
+    left: auto ;
+    bottom: auto ;
+    transform: none;
+    margin: 0.5rem 0 0 0;
+    
+    display: inline-block;
+    align-self: flex-start;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    border: none;
+    padding: 0.85rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #212529;
+}
+
+.alert {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+    padding: 0.85rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    display: none;
+}
+
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    width: 100%;
+}
+
+.item {
+    border: 1px solid var(--primary-color, #ced4da);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.q {
+    width: 100%;
+    background-color: var(--white-color, #E9EcEF);
+    border: none;
+    padding: 1rem 1.25rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--dark-color, #343a40);
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+.q:hover {
+    background-color: var(--primary-color, #ced4da);
+}
+
+
+.q span {
+    pointer-events: none;
+}
+
+
+.a {
+    display: none;
+    padding: 1rem 1.25rem;
+    color: var(--dark-color, #343a40);
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    border-top: 1px solid var(--primary-color, #ced4da);
+}
+
+
+.item.active .a {
+    display: block;
+}
+
+.item.active .q {
+    background-color: var(--primary-color, #ced4da);
+    color: var(--dark-color, #343a40);
+}
+
+
+@media (max-width: 48rem) {
+    .row {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,103 @@
+:root{
+    /*colors*/
+    --white-color:#E9EcEF;
+    --dark-color:#343a40;
+    --primary-color: #ced4da;
+    
+
+    /*Site max width*/
+    --site-max-width:81.25rem;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-color);
+    flex: 1
+
+}
+nav{
+    display: flex;
+    background-color: var(--dark-color);
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav-logo{
+    justify-content: center;
+}
+.nav-logo path {
+  width: 20rem;         
+  height: 2.813rem;        
+  flex-shrink: 0;      
+}
+nav a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.form-box{
+    margin: 6rem;
+    width: 100%;
+    max-width: 28rem;
+    padding: 2rem;
+    border-radius: 0.7rem;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.1) ;
+}
+
+h2{
+    font: 2rem;
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+input{
+    
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--white-color);
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: var(--dark-color);
+    margin-bottom: 1.2rem;
+}
+.login-box button{
+    width: 100%;
+    padding: 0.8rem;
+    background:var(--dark-color,#343a40);
+    color: var(--white-color);
+    border-radius: 0.5rem;
+    border:none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    transition: 0.5s ease-out;
+}
+button:hover{
+    background-color: #212529;
+    color: var(--white-color);
+}
+.error-text{
+    color: #cf2424;
+    font-weight: 800;
+}
+@media only screen and (max-width:40.5rem) {
+    .form-box{
+        max-width: 15rem;
+        margin:1rem;
+    }
+    main{
+        flex: 1;
+    }
+    
+}

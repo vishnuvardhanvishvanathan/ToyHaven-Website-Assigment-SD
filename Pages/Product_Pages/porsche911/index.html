@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../../images/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../images/icons/favicon-16x16.png">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../images/icons/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../../../style/style.css">
+    <link rel="stylesheet" href="../../../style/prod_list.css">
+    <link rel="stylesheet" href="../../../style/prod_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <title>Toy Haven</title>
+</head>
+    <body>
+        <section class="announcement-bar">
+                <p id="announcement-text"></p>
+        </section>
+        <header>  
+            <nav class = "navbar">
+                <section class="hamburger">
+                    <section class="line"></section>
+                    <section class="line"></section>
+                    <section class="line"></section>
+                </section>
+                
+                <a href="../../../index.html" class="nav-logo">
+                    <svg viewBox="0 0 390 390"><path d="M 162.8,21.0 L 162.8,21.0 Q 163.0,7.0 177.0,7.4 L 212.0,8.6 Q 226.0,9.0 226.1,23.0 L 226.9,177.0 Q 227.0,191.0 240.9,189.8 L 260.1,188.2 Q 274.0,187.0 278.5,173.7 L 288.5,144.3 Q 293.0,131.0 306.9,132.3 L 344.1,135.7 Q 358.0,137.0 355.7,150.8 L 344.3,219.2 Q 342.0,233.0 346.6,246.2 L 351.4,259.8 Q 356.0,273.0 355.7,287.0 L 354.3,346.0 Q 354.0,360.0 340.0,359.7 L 283.0,358.3 Q 269.0,358.0 268.4,344.0 L 265.6,285.0 Q 265.0,271.0 258.7,263.9 L 256.3,261.1 Q 250.0,254.0 236.0,254.0 L 149.0,254.0 Q 135.0,254.0 129.5,264.5 L 127.5,268.5 Q 122.0,279.0 121.3,293.0 L 118.7,342.0 Q 118.0,356.0 104.0,356.0 L 47.0,356.0 Q 33.0,356.0 33.0,342.0 L 33.0,297.0 Q 33.0,283.0 40.6,271.2 L 47.4,260.8 Q 55.0,249.0 47.8,237.0 L 41.2,226.0 Q 34.0,214.0 33.4,200.0 L 31.6,153.0 Q 31.0,139.0 45.0,138.0 L 74.0,136.0 Q 88.0,135.0 91.7,148.5 L 97.3,169.5 Q 101.0,183.0 115.0,184.2 L 147.0,186.8 Q 161.0,188.0 161.2,174.0 Z" fill="#1A1B22"/></svg>
+                    <h2 class="logo-text">Toy Haven</h2>
+                </a>
+                
+                
+                <ul class="nav-menu">
+                    <section class="ham-menu">
+                        <section class="toggle-logo">
+                            <a href="../../../index.html" class="nav-logo">
+                            <svg viewBox="0 0 390 390"><path d="M 162.8,21.0 L 162.8,21.0 Q 163.0,7.0 177.0,7.4 L 212.0,8.6 Q 226.0,9.0 226.1,23.0 L 226.9,177.0 Q 227.0,191.0 240.9,189.8 L 260.1,188.2 Q 274.0,187.0 278.5,173.7 L 288.5,144.3 Q 293.0,131.0 306.9,132.3 L 344.1,135.7 Q 358.0,137.0 355.7,150.8 L 344.3,219.2 Q 342.0,233.0 346.6,246.2 L 351.4,259.8 Q 356.0,273.0 355.7,287.0 L 354.3,346.0 Q 354.0,360.0 340.0,359.7 L 283.0,358.3 Q 269.0,358.0 268.4,344.0 L 265.6,285.0 Q 265.0,271.0 258.7,263.9 L 256.3,261.1 Q 250.0,254.0 236.0,254.0 L 149.0,254.0 Q 135.0,254.0 129.5,264.5 L 127.5,268.5 Q 122.0,279.0 121.3,293.0 L 118.7,342.0 Q 118.0,356.0 104.0,356.0 L 47.0,356.0 Q 33.0,356.0 33.0,342.0 L 33.0,297.0 Q 33.0,283.0 40.6,271.2 L 47.4,260.8 Q 55.0,249.0 47.8,237.0 L 41.2,226.0 Q 34.0,214.0 33.4,200.0 L 31.6,153.0 Q 31.0,139.0 45.0,138.0 L 74.0,136.0 Q 88.0,135.0 91.7,148.5 L 97.3,169.5 Q 101.0,183.0 115.0,184.2 L 147.0,186.8 Q 161.0,188.0 161.2,174.0 Z" fill="#1A1B22"/></svg>
+                            <section class="close-btn"><img src="../../../images/cls-btn.svg" alt=""></section>
+                            </a>
+                        </section>
+                        
+                            <li class="nav-item"><a href="../../../Pages/Product_Listing/index.html" class="nav_link ham-link">Shop</a>
+                            </li>
+
+                            <li class="nav-item"><a href="../../../index.html#Pre-Orders" class="nav_link ham-link">Pre-Orders</a>
+                            </li>
+                            <li class="nav-item"><a href="../../../index.html#coming-soon" class="nav_link ham-link">Coming-Soon</a>
+                            </li>
+
+                        
+                    </section>
+                    <section class="icon-menu">
+                        <li class="nav-item"><a href="../../User_Signin/index.html" ><img src="../../../images/User.svg" alt="Sign In" class="nav_link" ></a>
+                        </li>
+
+                        <li class="nav-item"><a href="../../AddToCart/index.html"><img src="../../../images/Cart.svg" alt="Shopping Cart" class="nav_link" ></a>
+                        </li>
+
+                        <li class="nav-item"><a href="../../WishList/index.html"><img src="../../../images/favorite.svg" alt="Favourite" class="nav_link" ></a>
+                        </li>
+                    </section>
+                    
+                </ul>
+                
+            </nav>
+                
+        </header>
+        <main>
+            <section class="outer-cover">
+                <section class="swiper myswiper">
+                    <section class="swiper-wrapper cover">
+                        <section class="swiper-slide product">
+                            <img src="../../../images/Products/porsche991/porsche991.webp" alt="">
+                        </section>
+
+                        <section class="swiper-slide product">
+                            <img src="../../../images/Products/porsche991/porsche9911.jpg" alt="">
+                        </section> 
+
+                        <section class="swiper-slide product">
+                            <img src="../../../images/Products/porsche991/porsche9912.jpg" alt="">
+                        </section>
+
+                        <section class="swiper-slide product">
+                            <img src="../../../images/Products/porsche991/porsche9913.jpg" alt="">
+                        </section>
+                            
+                    </section>
+
+            </section>
+                
+                <section class="product-img">
+                    <img id="primimg" src="../../../images/Products/porsche991/porsche991.webp" alt="">
+                    <img src="../../../images/Products/porsche991/porsche9911.jpg" alt="">
+                    <img src="../../../images/Products/porsche991/porsche9912.jpg" alt="">
+                    <img src="../../../images/Products/porsche991/porsche9913.jpg" alt="">
+                </section>
+                
+                <section class="product-desc">
+                    <h2 id="title">Porsche 911 GT1</h2>
+                    <h4>Diecast</h4>
+                    <h3 id="price">$149.00</h3>
+
+                    <section class="wishlist">
+                        <a href="#"><img src="../../../images/wishlistcard.svg" alt="" class="WishListbtn"><h3>Add To WishList</h3></a>
+                    </section>
+
+                    <section class="cart">
+                        <button id="addcartbtn"> Add To Cart</button>
+                    </section>
+
+                    <section class="about">
+                        <h4>Hot Wheels x Robert Lewandowski 1997 Porsche 911 GT1 (1:64 Scale)</h4>
+                        <p>Inspired by the relentless drive and legendary career of modern football striker Robert Lewandowski, this Hot Wheels x Porsche 911 GT1 collaboration captures the spirit of peak performance. Finished in a striking metallic red-and-white livery—a tribute to Poland's national colors—and detailed with custom goal-celebration graphics, this die-cast model brings elite motorsport aesthetic and personal storytelling straight to your collector display.</p>
+                        
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>
+                                Custom Tribute Livery: Premium metallic red-and-white finish accented with Robert Lewandowski’s signature crossed-fists goal celebration graphics and iconic jersey details.
+                            </li>
+                            <br>
+                            <li>
+                                Precision Die-Cast Build: Heavyweight ZAMAC body coupled with a full metal, matte black chassis for authentic hand-feel and durability.
+                            </li>
+                            <br>
+                            <li>
+                                Authentic Motorsport Finishing: Equipped with Real Riders 10-spoke black wheels, light smoke-tinted windows, and housed inside a collector-grade magnetic display box.
+                            </li>
+                        </ul>     
+                    </section>
+                       
+
+                </section>
+
+            </section>
+            
+        </main>
+        <footer>
+            <section class="top-foot">
+                <section class="left-foot-content">
+                    <section class="left-top-foot foot-logo">
+                        <svg viewBox="0 0 390 390"><path d="M 162.8,21.0 L 162.8,21.0 Q 163.0,7.0 177.0,7.4 L 212.0,8.6 Q 226.0,9.0 226.1,23.0 L 226.9,177.0 Q 227.0,191.0 240.9,189.8 L 260.1,188.2 Q 274.0,187.0 278.5,173.7 L 288.5,144.3 Q 293.0,131.0 306.9,132.3 L 344.1,135.7 Q 358.0,137.0 355.7,150.8 L 344.3,219.2 Q 342.0,233.0 346.6,246.2 L 351.4,259.8 Q 356.0,273.0 355.7,287.0 L 354.3,346.0 Q 354.0,360.0 340.0,359.7 L 283.0,358.3 Q 269.0,358.0 268.4,344.0 L 265.6,285.0 Q 265.0,271.0 258.7,263.9 L 256.3,261.1 Q 250.0,254.0 236.0,254.0 L 149.0,254.0 Q 135.0,254.0 129.5,264.5 L 127.5,268.5 Q 122.0,279.0 121.3,293.0 L 118.7,342.0 Q 118.0,356.0 104.0,356.0 L 47.0,356.0 Q 33.0,356.0 33.0,342.0 L 33.0,297.0 Q 33.0,283.0 40.6,271.2 L 47.4,260.8 Q 55.0,249.0 47.8,237.0 L 41.2,226.0 Q 34.0,214.0 33.4,200.0 L 31.6,153.0 Q 31.0,139.0 45.0,138.0 L 74.0,136.0 Q 88.0,135.0 91.7,148.5 L 97.3,169.5 Q 101.0,183.0 115.0,184.2 L 147.0,186.8 Q 161.0,188.0 161.2,174.0 Z" fill="#00000"/></svg>
+                        <h3>Toy Haven</h3>
+                    </section>
+                    <section class="left-foot-icons">
+                        <ol>
+                            <li>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="#ced4da" /><rect x="15" y="15" width="18" height="18" rx="5" ry="5" fill="none" stroke= "#343a40" stroke-width="1.8" /><circle cx="24" cy="24" r="4.2" fill="none" stroke="#343a40" stroke-width="1.8" /><circle cx="29.5" cy="18.5" r="0.9" fill="#343a40" /></svg></a>
+                            </li>
+                            <li>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 680" width="100%" height="100%"><rect width="680" height="680" fill="#343a40" /><circle cx="340" cy="340" r="272" fill="#E9ECEF" /><g transform="translate(196, 196) scale(1.5)"><path fill="#343a40" d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z"/></g></svg></a>                    </li>
+                            <li>
+                                <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 680" width="100%" height="100%"><rect width="680" height="680" fill="#343a40" /><circle cx="340" cy="340" r="272" fill="#E9ECEF" /><path fill="#343a40" d="M380 578V364h72l11-84h-83v-53c0-24 7-41 41-41h44V111c-8-1-34-3-64-3-63 0-107 39-107 110v62h-72v84h72v214h86z" /></svg></a>                        </li>
+                            <li>
+                                <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 680" width="100%" height="100%"><rect width="680" height="680" fill="#343a40 " /><circle cx="340" cy="340" r="272" fill="#ced4da" /><rect x="240" y="240" width="200" height="200" rx="30" ry="30" fill="#343a40" /><g fill="#ced4da"><circle cx="282" cy="286" r="13" /><rect x="270" y="312" width="24" height="88" rx="3" /><path d="M326 312 h24 v13 c5-8 16-15 30-15 22 0 38 14 38 42 v48 h-24 v-44 c0-12-5-21-17-21-10 0-16 7-18 14 v51 h-24 V312 z" /></g></svg></a>
+                            </li>
+                        </ol>
+                    </section>
+                    
+                </section>
+                <section class="right-top-foot"> 
+                    <h2>Subscribe To Our Newsletter!</h2>
+                    <section class="Newsletter-foot">
+                        <input type="text" name="Sub-mail" id="searchbox" placeholder="you@eexample.com"><button type="submit">Subscribe</button>
+                    </section>
+                    
+                </section>
+            </section>
+            <section class="foot-nav">
+                <a href="../../aboutus/index.html">About Us</a>
+            <a href="../../Contactus/index.html">Contact Us</a>
+            <a href="../../Feedback&Support/index.html">Support</a>
+            </section>
+            <section class="foot-end">
+                <h4>&copy; 2026 Toy Haven. All rights reserved.</h4>
+            </section>
+        </footer>
+    <script src="../../../Js/banner.js"></script>
+    <script src="../../../Js/addtocard.js"></script>
+    <script src="../../../Js/hamburger.js"></script>
+    <script src="../../../Js/announcement.js"></script>
+    <script src="../../../Js/filter.js"></script>
+    <script src="../../../Js/wishlist.js"></script>
+
+    </body>
+
+</html>

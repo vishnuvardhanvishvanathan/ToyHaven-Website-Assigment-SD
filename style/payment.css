@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    /*colors*/
+    --white-color:#E9EcEF;
+    --dark-color:#343a40;
+    --primary-color: #ced4da;
+    
+
+    /*Site max width*/
+    --site-max-width:81.25rem;
+}
+body{
+    background-color: var(--white-color);
+}
+.wrapper{
+    position: relative;
+}
+.payment{
+    background-color: var(--primary-color);
+    max-width: 26rem;
+    margin: 5rem auto;
+    height: auto;
+    padding: 2rem;
+    padding-top:4rem;
+    border-radius: 0.4rem;
+   
+}
+.payment h2{
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2.5rem;
+    color: var(--dark-color);
+}
+.nav-logo{
+    margin: auto;
+}
+.form .label{
+    display: block;
+    color: var(--dark-color);
+    margin: 0.5rem;
+    
+}
+.card{
+    width: 100%;
+    padding: 0;
+ 
+}
+.form .input{
+    padding: 1rem 0 1rem 1.8rem;
+    width: 100%;
+    text-align: center;
+    border: 0.1rem solid var(--dark-color);
+    border-radius: 0.45rem;
+    letter-spacing: 1px;
+    word-wrap: 3px;
+    outline: nones;
+    font-size: 1rem;
+    color: var(--dark-color);
+
+}
+.card-grp{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.card-item{
+    position: relative;
+    width: 48%; 
+}
+.card.space {
+    position: relative;
+}
+.space{
+    margin-bottom:  2rem;
+    gap: 1rem;
+}
+.paybtn{
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+.inputimg{
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.inputimg2{
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 1rem;
+}
+
+@media only screen and (max-width:40.5rem) {
+    .wrapper{
+        margin: 0.8rem;
+    }
+    
+}

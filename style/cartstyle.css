@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+
+}
+:root{
+    /*colors*/
+    --white-color:#E9EcEF;
+    --dark-color:#343a40;
+    --primary-color: #ced4da;
+    
+
+    /*Site max width*/
+    --site-max-width:81.25rem;
+}
+.cartwrapper{
+    display:flex ;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 1rem;
+    width: var(--site-max-width);
+    padding: 0 1rem
+    
+}
+.errormsg{
+    color: red;
+    display: none;
+}
+.shoppingcart{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.ordersummary{
+    
+    width: 100%;
+}
+.orderdesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+}
+.subtotal{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.total{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.cartheader{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.dividerhori{
+    width: 90%;
+    height: 0.1rem;
+    background-color: var(--dark-color);
+    border-radius: 1rem;
+    margin: auto;
+    gap: 1rem;
+}
+.dividervert{
+    width: 0.4rem;
+    height:20rem;
+    margin-top: 1rem;
+    background-color: var(--dark-color);
+    border-radius: 1rem;
+    gap: 1rem;
+}
+.orderdescoption{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 0;
+}
+.prder{
+    font-size: x-large;
+}
+.cartmain .emptycart{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem dotted var(--dark-color);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.emptycart #btnshopmore{
+    border: 0.1rem solid var(--dark-color)!important;
+    padding: 1rem;
+    transition: 0.5s ease-out;
+    border-radius: 0.4rem;
+    margin-top: 0.3rem;
+    background-color: var(--primary-color);
+}
+#btnshopmore:hover,#btncheckout:hover{
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+}
+#btncheckout{
+       border: 0.1rem solid var(--dark-color)!important;
+    padding: 1rem;
+    transition: 0.5s ease-out;
+    border-radius: 0.4rem;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    width: 40%;
+    background-color: var(--primary-color);
+}
+
+.cartitem{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cartimg{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--dark-color);
+}
+.quantity{
+    display: flex;
+    width: 20%;
+    gap: .2rem;
+    justify-content: center;
+    align-items: center;
+}
+.prod{
+    display: flex;
+    width: 60%;
+
+    align-items: center;
+}
+.prodprice{
+    width: 20%;
+}
+.itemadd,.itemremove{
+    border: 0.1rem solid var(--dark-color);
+    border-radius: .3rem;
+    margin: 0.2rem;
+    padding: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+    gap: 1rem;
+}
+.activecart{
+    display: none;
+}
+.activecart button{
+    padding: 0px;
+    height: 2rem;
+    width: 2rem;
+    aspect-ratio: 1/1;
+}
+.deletecan{
+    display: flex;
+    align-items: center;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cartwrapper{
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+    .dividervert{
+        display: none;
+    }
+    .shoppingcart{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .deletecan{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .quantity{
+
+    width: 30%;
+
+    }
+    .prod{
+        width: 50%;
+    }
+    .prodprice{
+        width: 20%;
+    }
+    .cartimg{
+    width: 3.5rem;
+    height: 3.5rem;
+ 
+}
+
+
+}
+
+@media only screen and (max-width:40.5rem) {
+    .cartwrapper{
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+    .dividervert{
+        display: none;
+    }
+    .shoppingcart{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .deletecan{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .quantity{
+
+    width: 30%;
+
+    }
+    .prod{
+        width: 50%;
+    }
+    .prodprice{
+        width: 20%;
+    }
+    .cartimg{
+    width: 3.5rem;
+    height: 3.5rem;
+ 
+}
+
+}

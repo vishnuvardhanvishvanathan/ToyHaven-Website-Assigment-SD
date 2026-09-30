@@ -1,0 +1,121 @@
+:root{
+    /*colors*/
+    --white-color:#E9EcEF;
+    --dark-color:#343a40;
+    --primary-color: #ced4da;
+    
+
+    /*Site max width*/
+    --site-max-width:81.25rem;
+}
+
+.outer-cover{
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+.myswiper{
+    display: none;
+}
+
+.product-desc h4{
+    font-weight: 400;
+}
+.product-desc .about h4{
+    font-weight: 700;
+}
+.product-desc .about{
+    list-style:disc;
+    padding-left: 20px;
+    list-style-position: inside;
+
+}
+
+.product-img{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.product-desc{
+    width: 70rem;
+    
+}
+.product-img img{
+    width: 23rem;
+    height: 24rem;
+    aspect-ratio: 3/4;
+    border: 1px black;
+    object-fit: cover;
+}
+.wishlist{
+    margin-bottom: 1rem
+}
+.wishlist a{
+    display: flex;
+    align-items: center;
+    color:var(--dark-color)
+}
+.wishlist img{
+    width: 2rem;
+    height: 2rem;
+}
+.wishlist a h3{
+    margin-left: 1rem;
+}
+.product-desc .cart{
+    display:flex;
+    justify-content: center;
+    background-color: var(--dark-color);
+    border-radius: 1rem;
+    width: 20rem;
+    margin: auto;
+}
+.cart button{
+    color: var(--white-color);
+    padding: 0.6rem;
+    font-size: 1rem;
+    align-items: center;
+    transition: .5s ease-out;
+    height: 100%;
+    width: 100%;
+}
+.cart button:hover{
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    font-weight: 800;
+}
+.about{
+    margin-top: 2rem;
+    width: 90%;
+}
+@media only screen and (max-width:40.5rem) {
+    .outer-cover{
+        display: flex;
+        flex-direction: column;
+    }
+    .product-img{
+        display: none;
+    }
+    .product{
+        display: flex;
+        flex-wrap: nowrap;
+        border: 1px #343a40 solid ;
+        height: 30rem;
+        max-width: 100vw;
+    }
+
+    .myswiper{
+    display: flex;
+    width: 100%;
+    }   
+    .myswiper .swiperslide{
+        width: 100%;
+        height: 100%;
+    }
+    .product-desc{
+        padding: 1rem;
+        width: 100%;
+    }
+}

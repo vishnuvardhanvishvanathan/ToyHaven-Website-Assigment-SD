@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/payment.css">
+    <link rel="icon" type="image/x-icon" href="../../images/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/icons/favicon-16x16.png">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/icons/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <title>Toy Haven</title>
+</head>
+<body>
+    <header>  
+        <nav class = "navbar">
+            <a href="../../index.html" class="nav-logo">
+                <svg viewBox="0 0 390 390"><path d="M 162.8,21.0 L 162.8,21.0 Q 163.0,7.0 177.0,7.4 L 212.0,8.6 Q 226.0,9.0 226.1,23.0 L 226.9,177.0 Q 227.0,191.0 240.9,189.8 L 260.1,188.2 Q 274.0,187.0 278.5,173.7 L 288.5,144.3 Q 293.0,131.0 306.9,132.3 L 344.1,135.7 Q 358.0,137.0 355.7,150.8 L 344.3,219.2 Q 342.0,233.0 346.6,246.2 L 351.4,259.8 Q 356.0,273.0 355.7,287.0 L 354.3,346.0 Q 354.0,360.0 340.0,359.7 L 283.0,358.3 Q 269.0,358.0 268.4,344.0 L 265.6,285.0 Q 265.0,271.0 258.7,263.9 L 256.3,261.1 Q 250.0,254.0 236.0,254.0 L 149.0,254.0 Q 135.0,254.0 129.5,264.5 L 127.5,268.5 Q 122.0,279.0 121.3,293.0 L 118.7,342.0 Q 118.0,356.0 104.0,356.0 L 47.0,356.0 Q 33.0,356.0 33.0,342.0 L 33.0,297.0 Q 33.0,283.0 40.6,271.2 L 47.4,260.8 Q 55.0,249.0 47.8,237.0 L 41.2,226.0 Q 34.0,214.0 33.4,200.0 L 31.6,153.0 Q 31.0,139.0 45.0,138.0 L 74.0,136.0 Q 88.0,135.0 91.7,148.5 L 97.3,169.5 Q 101.0,183.0 115.0,184.2 L 147.0,186.8 Q 161.0,188.0 161.2,174.0 Z" fill="#1A1B22"/></svg>
+                <h2 class="logo-text">Toy Haven</h2>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="wrapper">
+            <section class="payment">
+
+                <h2>Payment Gateway</h2>
+                <section class="form">
+                    <section class="card space">
+                        <label for="" class="label">Card Holder:</label>
+                        <input type="text" class="input" name="card_holder" id="card_holder" pattern="[a-zA-z]*" placeholder="Card Holder">
+                        <img src="../../images/person.svg" alt="" class="inputimg2">
+                    </section>
+                    <section class="card space">
+                        <label for="" class="label">Card Number:</label>
+                        <input type="number" class="input" name="card_number" id="card_number" max="10" placeholder="Card Number">
+                        <img src="../../images/credit_card.svg" alt="" class="inputimg2">
+                    </section>
+                    <section class="card-grp space">
+                        <section class="card-item">
+                            <label for="" class="label">Expiry date:</label>
+                            <input type="date" class="input" name="expiry_date" id="expiry_date" placeholder="00 / 00">
+                            <img src="../../images/calendar.svg" alt="" class="inputimg">
+                        </section>
+                        <section class="card-item">
+                            <label for="" class="label">CVC:</label>
+                            <input type="text" class="input" name="cvc" id="cvc" placeholder="000">
+                            <img src="../../images/lock.svg" alt="" class="inputimg">
+
+                        </section>
+                    </section>
+                    <section class="paybtn">Pay</section>
+
+                </section>
+            </section>
+        </section>
+    </main>
+    
+<script src="../../Js/hamburger.js"></script>
+<script src="../../Js/paymentcheckout.js"></script>
+    </body>
+</html>
