@@ -43,11 +43,11 @@ document.addEventListener('DOMContentLoaded',()=>{
                 showError(errorMsg1, 'Please enter valid first and last name.');
                 return;
             }
-            if (zipcodeval.length<5 || zipcodeval.length>6 || isNaN(zipcodeval)){
+            if (zipcodeval.length<5 || zipcodeval.length!==6 || isNaN(zipcodeval)){
                 showError(errorMsg3, 'Please enter a valid zip code.');
                 return;
             }
-            if (isNaN(phoneval) || phoneval.length <10){
+            if (isNaN(phoneval) || phoneval.length!==10){
                 showError(errorMsg4, 'Please Enter a valid 10 digit phone number! ');
                 return;
             }
